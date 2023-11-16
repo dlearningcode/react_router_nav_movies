@@ -22,4 +22,11 @@ TBD
 
 ## Diary
 
-2023-11-15 Need to figure out categories, movies, and relevant details for the array.
+2023-11-15
+
+- Need to figure out categories, movies, and relevant details for the array.
+- Just figured out this isn't going to be the easy peezy project Bing suggested. Things I'm not sure about:
+  - How to filter a context-held array for a specific category, especially when a given movie has multiple categories.
+  - How to add multiple categories to a movie object (thinking array, but not sure if/how that affects filtering)
+  - How to create a details object that expands when the movie name link is clicked
+- Okay, I think I've got the Router part down, but I'm back to undefined context. Wondering if there might be some sort of interaction between Router and Context I'm unaware of. Tomorrow's journey.
