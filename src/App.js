@@ -1,27 +1,33 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import MoviesProvider from './providers/MoviesProvider';
+// import MoviesProvider from './providers/MoviesProvider';
+import {movies} from './components/Movies';
 import Scifi from './pages/Scifi';
 import Homepage from './pages/Homepage';
+import Comedy from './pages/Comedy';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <MoviesProvider>
+    // <MoviesProvider>
       <div className="App">
         <header className="App-header">
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/scifi">Sci-Fi</Link>
-          </nav>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/scifi" element={<Scifi />} />
-          </Routes>
+          <Router>
+            <nav>
+              <Link style={{padding: 5}} to="/">Home</Link>
+              <Link style={{padding: 5}} to="/scifi">Sci-Fi</Link>
+              <Link style={{padding: 5}} to="/comedy">Comedy</Link>
+            </nav>
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/scifi" element={<Scifi movies={movies} />} />
+              <Route path="/comedy" element={<Comedy movies={movies} />} />
+            </Routes>
+          </Router>
         </header>
       </div>
-    </MoviesProvider>
+    // </MoviesProvider>
   );
 }
 
