@@ -1,6 +1,6 @@
 export const movies = [
     {
-      id: 1,
+      id: 'iron-man',
       title: 'Iron Man',
       director: 'Jon Favreau',
       releaseYear: 2008,
@@ -10,7 +10,7 @@ export const movies = [
       storyline: 'After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.',
     },
     {
-      id: 2,
+      id: 'doctor-strange-in-the-multiverse-of-madness',
       title: 'Doctor Strange in the Multiverse of Madness',
       director: 'Sam Raimi',
       releaseYear: 2022,
@@ -20,7 +20,7 @@ export const movies = [
       storyline: 'Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions across the multiverse. They seek help from Wanda the Scarlet Witch, Wong and others.',
     },
     {
-      id: 3,
+      id: 'thor-ragnarok',
       title: 'Thor: Ragnarok',
       director: 'Taika Waititi',
       releaseYear: 2017,
@@ -30,7 +30,7 @@ export const movies = [
       storyline: 'Imprisoned on the planet Sakaar, Thor must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.',
     },
     {
-      id: 4,
+      id: 'captain-america-civil-war',
       title: 'Captain America: Civil War',
       director: 'Anthony Russo, Joe Russo',
       releaseYear: 2016,
@@ -40,7 +40,7 @@ export const movies = [
       storyline: "Political involvement in the Avengers' affairs causes a rift between Captain America and Iron Man.",
     },
     {
-      id: 5,
+      id: 'moon-knight',
       title: 'Moon Knight',
       director: 'Mohamed Diab, Justin Benson, Aaron Moorhead',
       releaseYear: 2022,
@@ -50,7 +50,7 @@ export const movies = [
       storyline: "Steven Grant discovers he's been granted the powers of an Egyptian moon god. But he soon finds out that these newfound powers can be both a blessing and a curse to his troubled life.",
     },
     {
-      id: 6,
+      id: 'she-hulk-attorney-at-law',
       title: 'She-Hulk: Attorney at Law',
       director: 'Kat Coiro, Anu Valia',
       releaseYear: 2022,

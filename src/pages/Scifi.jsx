@@ -1,5 +1,6 @@
 // import React, { useContext } from "react";
 // import MoviesContext from "../providers/MoviesProvider";
+import { Link } from "react-router-dom";
 
 export default function Scifi(props) {
 
@@ -15,7 +16,11 @@ export default function Scifi(props) {
             <p>Click on the links above to browse the movies by category.</p>
             <ul>
                 {scifiMovies.map((movie) => (
-                    <li key={movie.id}>{movie.title}</li>
+                    <li key={movie.id}>
+                        <Link to={`/scifi/${movie.id}`}>
+                            {movie.title}
+                        </Link>
+                    </li>
                 ))}
             </ul>
         </div>
