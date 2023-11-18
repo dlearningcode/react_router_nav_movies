@@ -38,3 +38,13 @@ As this website is going to be based on a catalog created in a local array, it's
 - Rolling the site back to props for now, and the first two pages went up quickly.
 - Tomorrow will be getting all the main filter pages set up, and if I can move quick enough, figure out the movie details page as well. Don't know how React Router does internal navigation like that, especially since I'm thinking that I'd want to dynamically populate a template page, so all links go to the same page... we'll see.
 - Did figure out the array of objects filtering, using movie.categories.some(cat) to read inside each category array for a match.
+
+2023-11-17
+
+- Added React Router Link to Scifi.jsx to test passing props to MovieDetails.jsx for destructuring and rendering in the page, but as I learn more about React Router, two thoughts emerge:
+- instead of going the "traditional HTML" route of creating a page for every category, could it make sense to have one dynamic category page that gets props passed by the home page that becomes the category to filter on. This would match well with the one dynamic MovieDetails page I'm trying to develop.
+- Related to the latter part of the previous bullet, I'm wondering if I should keep Movies.js as an array of objects, or if I should convert it to an object of objects. Not sure which will be easier/more efficient to reference when passing a single movie object to the MovieDetails page.
+
+I know if I convert Movies.js into an object, I just pass movies.key as props; simple. It's part of the object already at the category page.
+
+It may be that easy for arrays, but I can't recall right now how to do that. Right now it feels like the array id wouldn't travel with the object, so it would involve more coding to reach back and get it. Got some research ahead!
