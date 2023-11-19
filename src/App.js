@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import {movies} from './components/Movies';
-import Scifi from './pages/Scifi';
+// import Scifi from './pages/Scifi';
 import Homepage from './pages/Homepage';
 // import Comedy from './pages/Comedy';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
@@ -16,11 +16,11 @@ function App() {
           <Router>
             <nav>
               <Link style={{padding: 5}} to="/">Home</Link>
-              <Link style={{padding: 5}} to="/categories/action">Action</Link>
-              <Link style={{padding: 5}} to="/categories/adventure">Adventure</Link>
-              <Link style={{padding: 5}} to="/categories/comedy">Comedy</Link>
-              <Link style={{padding: 5}} to="/categories/fantasy">Fantasy</Link>
-              <Link style={{padding: 5}} to="/categories/scifi">Sci-Fi</Link>
+              <Link style={{padding: 5}} to="/category/action">Action</Link>
+              <Link style={{padding: 5}} to="/category/adventure">Adventure</Link>
+              <Link style={{padding: 5}} to="/category/comedy">Comedy</Link>
+              <Link style={{padding: 5}} to="/category/fantasy">Fantasy</Link>
+              <Link style={{padding: 5}} to="/category/scifi">Sci-Fi</Link>
             </nav>
             <Routes>
               <Route path="/" element={<Homepage />} />
