@@ -1,7 +1,5 @@
-// import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-// import MoviesProvider from './providers/MoviesProvider';
 import {movies} from './components/Movies';
 import Scifi from './pages/Scifi';
 import Homepage from './pages/Homepage';
@@ -13,7 +11,6 @@ import MovieDetails from './pages/MovieDetails';
 
 function App() {
   return (
-    // <MoviesProvider>
       <div className="App">
         <header className="App-header">
           <Router>
@@ -29,13 +26,12 @@ function App() {
               <Route path="/" element={<Homepage />} />
               <Route path="/category/:category" element={<Category />}>
                 <Route index element={<MovieList movies={movies} />} />
-                <Route path="/:id" element={<MovieDetails />} />
+                <Route path=":id" element={<MovieDetails />} />
               </Route>
             </Routes>
           </Router>
         </header>
       </div>
-    // </MoviesProvider>
   );
 }
 
