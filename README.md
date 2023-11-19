@@ -48,3 +48,8 @@ As this website is going to be based on a catalog created in a local array, it's
 I know if I convert Movies.js into an object, I just pass movies.key as props; simple. It's part of the object already at the category page.
 
 It may be that easy for arrays, but I can't recall right now how to do that. Right now it feels like the array id wouldn't travel with the object, so it would involve more coding to reach back and get it. Got some research ahead!
+
+2023-11-18
+
+- Got all the linking functionality, only to discover the movie detail page renders as a view inside the calling movie list page. Not at all the user experience I was going for. Yeesh! Have to figure that out, but I did get one category template page and one movie detail template page to work for dynamically generating the multiple category pages the user would experience. Such cool stuff!
+- render categories on the movie details page as separate spans for formatting

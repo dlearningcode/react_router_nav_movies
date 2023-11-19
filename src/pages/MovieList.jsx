@@ -11,7 +11,7 @@ export default function MovieList({movies}) {
         <ul>
             {movies.filter((movie) => movie.categories.includes(category)).map((movie) => (
                 <li key={movie.id}>
-                    <Link to={`/${movie.id}`} state={{movie: movie}}>
+                    <Link to={`${movie.id}`} state={{movie: movie}}>
                         {movie.title}
                     </Link>
                 </li>
