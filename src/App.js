@@ -33,7 +33,6 @@ function App() {
               </Route>
             </Routes>
           </Router>
-          <Homepage />
         </header>
       </div>
     // </MoviesProvider>
