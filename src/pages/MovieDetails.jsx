@@ -1,6 +1,7 @@
-export default function MovieDetails (props) {
+export default function MovieDetails ({movie}) {
 
-    const [id, title, director, releaseYear, IMDBrating, categories, actors, storyline] = props.movie
+    const {id, title, director, releaseYear, IMDBrating, categories, actors, storyline} = movie
+    
     return (
         <div>
         <h1 key={id}>{title}</h1>
