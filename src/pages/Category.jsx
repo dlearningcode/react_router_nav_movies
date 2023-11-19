@@ -1,15 +1,20 @@
 // import React, { useContext } from "react";
 // import MoviesContext from "../providers/MoviesProvider";
-import { Outlet } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 
-const categoryName = ''
+let categoryName = ''
 
-export default function Category({movies, category}) {
+export default function Category() {
+
+    // Pull the category from the URL
+    const {category} = useParams();
 
     // const {movies} = props;
     // const [moviesList, setMovieList] = useContext(MoviesContext);
     // console.log('Scifi MoviesContext:',MoviesContext);
     // console.log('Scifi movieList:',movieList);
+
+    // Get user-friendly category name
     switch(category) {
         case 'scifi':
             categoryName = 'Sci-Fi '
@@ -29,22 +34,14 @@ export default function Category({movies, category}) {
         default:
             categoryName = ''
     }
-    // const scifiMovies = movies.filter((movie) => movie.categories.some (cat => cat === "sci-fi"));
 
     return (
         <div>
             <h1>Marvel {categoryName}Movies</h1>
             <p>Click a movie to see details.</p>
-            <Outlet movies={movies} category={category} />
-            {/* <ul>
-                {scifiMovies.map((movie) => (
-                    <li key={movie.id}>
-                        <Link to={`/scifi/${movie.id}`}>
-                            {movie.title}
-                        </Link>
-                    </li>
-                ))}
-            </ul> */}
+
+            {/* Call the Outlet component to render the nested routes */}
+            <Outlet />
         </div>
     );
 }
