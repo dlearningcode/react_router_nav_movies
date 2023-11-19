@@ -19,19 +19,18 @@ function App() {
           <Router>
             <nav>
               <Link style={{padding: 5}} to="/">Home</Link>
-              <Link style={{padding: 5}} to="/action">Action</Link>
-              <Link style={{padding: 5}} to="/adventure">Adventure</Link>
-              <Link style={{padding: 5}} to="/comedy">Comedy</Link>
-              <Link style={{padding: 5}} to="/fantasy">Fantasy</Link>
-              <Link style={{padding: 5}} to="/scifi">Sci-Fi</Link>
+              <Link style={{padding: 5}} to="/categories/action">Action</Link>
+              <Link style={{padding: 5}} to="/categories/adventure">Adventure</Link>
+              <Link style={{padding: 5}} to="/categories/comedy">Comedy</Link>
+              <Link style={{padding: 5}} to="/categories/fantasy">Fantasy</Link>
+              <Link style={{padding: 5}} to="/categories/scifi">Sci-Fi</Link>
             </nav>
             <Routes>
-              <Route path="/" element={<Homepage />}>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/category/:category" element={<Category />}>
                 <Route index element={<MovieList movies={movies} />} />
-                <Route path="/:category" element={<MovieDetails />} />
+                <Route path="/:id" element={<MovieDetails />} />
               </Route>
-              <Route path="/scifi" element={<Category movies={movies} category="scifi" />} />
-              <Route path="/comedy" element={<Comedy movies={movies} category="comedy" />} />
             </Routes>
           </Router>
           <Homepage />
