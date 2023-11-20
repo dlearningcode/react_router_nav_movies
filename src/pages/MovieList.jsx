@@ -1,5 +1,3 @@
-// import React, { useContext } from "react";
-// import MoviesContext from "../providers/MoviesProvider";
 import { Link, useParams } from "react-router-dom";
 
 export default function MovieList({movies}) {

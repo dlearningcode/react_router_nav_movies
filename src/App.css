@@ -40,3 +40,10 @@
 li {
   list-style-type: none;
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c44747;
+  height: 10vh;
+}
