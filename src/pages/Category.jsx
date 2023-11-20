@@ -1,10 +1,11 @@
 // import React, { useContext } from "react";
 // import MoviesContext from "../providers/MoviesProvider";
-import { Outlet, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import MovieList from "../pages/MovieList";
 
 let categoryName = ''
 
-export default function Category() {
+export default function Category({movies}) {
 
     // Pull the category from the URL
     const {category} = useParams();
@@ -41,7 +42,10 @@ export default function Category() {
             <p>Click a movie to see details.</p>
 
             {/* Call the Outlet component to render the nested routes */}
-            <Outlet />
+            {/* <Outlet /> */}
+
+            {/* Call the MoviesList component to render the nested routes */}
+            <MovieList movies={movies} />
         </div>
     );
 }

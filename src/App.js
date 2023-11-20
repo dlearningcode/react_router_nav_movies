@@ -24,10 +24,10 @@ function App() {
             </nav>
             <Routes>
               <Route path="/" element={<Homepage />} />
-              <Route path="/category/:category" element={<Category />}>
+              <Route path="/category/:category" element={<Category movies={movies} />}>
                 <Route index element={<MovieList movies={movies} />} />
-                <Route path=":id" element={<MovieDetails />} />
               </Route>
+                <Route path="/movies/:id" element={<MovieDetails />} />
             </Routes>
           </Router>
         </header>
