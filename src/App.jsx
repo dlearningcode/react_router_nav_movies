@@ -9,9 +9,9 @@ import MovieDetails from './pages/MovieDetails';
 
 function App() {
   return (
+    <Router>
       <div className="App">
         <header className="App-header">
-          <Router>
             <nav>
               <Link style={{padding: 5}} to="/">Home</Link>
               <Link style={{padding: 5}} to="/category/all">All</Link>
@@ -19,8 +19,10 @@ function App() {
               <Link style={{padding: 5}} to="/category/adventure">Adventure</Link>
               <Link style={{padding: 5}} to="/category/comedy">Comedy</Link>
               <Link style={{padding: 5}} to="/category/fantasy">Fantasy</Link>
-              <Link style={{padding: 5}} to="/category/sci-fi">Sci-Fi</Link>
+              <Link style={{padding: 5}} to="/category/sci-fi">Sci&#x2011;Fi</Link>
             </nav>
+        </header>
+        <main className='App-main'>
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/category/:category" element={<Category movies={movies} />}>
@@ -28,9 +30,12 @@ function App() {
               </Route>
                 <Route path="/movies/:id" element={<MovieDetails />} />
             </Routes>
-          </Router>
-        </header>
+        </main>
+        <footer className='App-footer'>
+            <p>Made in React by dioncodes.com</p>
+        </footer>
       </div>
+    </Router>
   );
 }
 
