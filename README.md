@@ -19,7 +19,7 @@ As this website is going to be based on a catalog created in a local array, it's
 ## Lessons Learned
 
 - BIG lesson: Context API and React Router v6 do not play.
-- React Router's official documentation describes a hook `useOutletContext` that may replace context API.
+- React Router can pass data in URL variables with their `useParams` hook, and through their Links with the `useLocation` hook. And full state with `useOutletContext`. This add-on has all the bells and whistles!
 
 ## Diary
 
@@ -53,3 +53,10 @@ It may be that easy for arrays, but I can't recall right now how to do that. Rig
 
 - Got all the linking functionality, only to discover the movie detail page renders as a view inside the calling movie list page. Not at all the user experience I was going for. Yeesh! Have to figure that out, but I did get one category template page and one movie detail template page to work for dynamically generating the multiple category pages the user would experience. Such cool stuff!
 - render categories on the movie details page as separate spans for formatting
+
+2023-11-20
+
+- Realized I didn't have to figure out anything related to Movies.js being an object or array because I already stripped each movie down to its own object in the mapping process. Learned how to pass it through the React Router Link for destructuring in MovieDetails.jsx.
+- Figured out how to render the movie details page separately from the movie list page.
+- Started the CSS. Nav is fighting me, but it's styled by React Router, so I'll have to dig into that to see how I can get my hooks into its formatting.
+- Got the categories rendering as separate tags on the movie details page.
