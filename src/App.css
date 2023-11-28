@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .App {
   background-color: #c44747;
   min-height: 100vh;
@@ -15,7 +9,7 @@
 }
 
 .App-header {
-  width: 80%;
+  padding: 0 10%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -39,14 +33,40 @@
 }
 
 nav {
+  max-width: 80%;
   display: flex;
-  flex-direction: row;
+  flex: 0 1 auto;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
 }
 
 li {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* a:link {
+  text-decoration: underline;
+} */
+
+a:visited {
+  color: rgb(110, 57, 57);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 251, 0);
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
 }
 
 .Movie-details {
