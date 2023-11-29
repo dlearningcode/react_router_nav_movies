@@ -19,8 +19,8 @@
 }
 
 .App-main, .App-footer {
-  max-width: 600px;
-  padding: 5%;
+  max-width: 900px;
+  padding: 10%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
