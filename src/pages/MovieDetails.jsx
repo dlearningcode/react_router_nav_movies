@@ -19,7 +19,7 @@ export default function MovieDetails () {
         <div className='Movie-details'>
             <h1 key={id}>{title}</h1>
             <div className='Details-categories'>{categoryList}</div>
-            <p>Release Year: {releaseYear} ⚪ IMDb Rating: {IMDbRating}</p>
+            <p>Release Year: {releaseYear} ⚪ <i class="fas fa-star    "></i><i class="fa fa-asterisk" aria-hidden="true"></i> IMDb Rating: {IMDbRating}</p>
             <p>Storyline: {storyline}</p>
             <p>Director: {director}</p>
             <p>Actors: {actorsList}</p>
