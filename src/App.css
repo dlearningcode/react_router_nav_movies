@@ -77,9 +77,9 @@ a:active {
   text-align: justify;
 }
 
-.Movie-details h2 {
-  margin: 0;
-  padding: 0;
+.Movie-details h1 {
+  justify-self: center;
+  margin-bottom: .2em;
 }
 
 .Details-categories {
