@@ -69,8 +69,17 @@ a:active {
 }
 
 .Movie-details {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, auto);
+  justify-items: justify;
+  align-items: center;
+  text-align: justify;
+}
+
+.Movie-details h2 {
+  margin: 0;
+  padding: 0;
 }
 
 .Details-categories {
